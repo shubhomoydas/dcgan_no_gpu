@@ -20,13 +20,16 @@ in order to make it self-contained. This file (mnist_train_cond_dcgan_no_gpu.py)
 1. Checkout DCGAN code from https://github.com/Newmu/dcgan_code
 
 2. Make the following changes to mnist/train_cond_dcgan.py:
+
     a. Add the following imports:
+    
         from theano.tensor.nnet import conv2d
         from theano.tensor.nnet import abstract_conv
 
     b. Add 'shit_no_gpu = True'
 
     c. Replace the functions gen(), discrim() with the following from mnist_train_cond_dcgan_no_gpu.py:
+    
         - conv_transpose()
         - gen()
         - discrim()
