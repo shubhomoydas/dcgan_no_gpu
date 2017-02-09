@@ -14,8 +14,8 @@ pythonw -m mnist.mnist_train_cond_dcgan_no_gpu
 
 Modifying the original DCGAN Code
 ------------
-Much of the following code has been copied over from: https://github.com/Newmu/dcgan_code
-in order to make this file self-contained. This file (mnist_train_cond_dcgan_no_gpu.py) only illustrates the small bits you need to replace for DCGAN to work without GPU. To run full DCGAN, you *will* need to get the entire original code first. Follow these steps:
+Much of the code in mnist_train_cond_dcgan_no_gpu.py has been copied over from: https://github.com/Newmu/dcgan_code
+in order to make it self-contained. This file (mnist_train_cond_dcgan_no_gpu.py) only illustrates the small bits you need to replace for DCGAN to work without GPU. To run full DCGAN, you *will* need to get the entire original code first. Follow these steps:
 
 1. Checkout DCGAN code from https://github.com/Newmu/dcgan_code
 
