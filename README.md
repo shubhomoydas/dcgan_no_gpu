@@ -38,9 +38,12 @@ You should now be able to replicate the results of DCGAN without a gpu when you 
 
 If you are already familiar with DCGAN, then cut through all other stuff in the code and focus on only three:
 
-    conv_transpose(): This is where lies the real meat of this code. Demonstrates how to apply convolution transform (deconv) using conv2d_grad_wrt_inputs.
+    conv_transpose(): This is where lies the real meat of this code.
+        Demonstrates how to apply convolution transform (deconv) 
+        using conv2d_grad_wrt_inputs.
     
-    gen(): Shows where/how to replace the GPU dependency. The other important information is the input/output size calculation.
+    gen(): Shows where/how to replace the GPU dependency.
+        The other important information is the input/output size calculation.
     
     discrim(): Contains simple replacement of dnn_conv with conv2d.
 
