@@ -299,9 +299,14 @@ p2 = theano.function([Z, Y], p_gen)
 tmp = gen_img(zmb, ymb)
 print "generated synthetic with shape %s" % str(tmp.shape)
 
+# since tmp is a batch of 28x28 images with 1 channel,
+# discrim() should be able to process them without errors.
+# Validate that this happens.
 tmp_p = p1(tmp, ymb)
 print "discriminator output shape %s" % str(tmp_p.shape)
 
+# Validate that we can tie the generator output with discriminator
+# input to ensure DCGAN works correctly.
 tmp_p = p2(zmb, ymb)
 print "discriminator output shape %s" % str(tmp_p.shape)
 
