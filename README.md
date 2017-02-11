@@ -31,7 +31,7 @@ in order to make it self-contained. This file only illustrates the small bits yo
     c. Replace the functions gen(), discrim() with the following from mnist_train_cond_dcgan_no_gpu.py:
     
     conv_transpose(): This is where lies the real meat of this code.
-        Demonstrates how to apply convolution transform (deconv) 
+        Demonstrates how to apply convolution transpose (deconv) 
         using conv2d_grad_wrt_inputs.
     
     gen(): Shows where/how to replace the GPU dependency.
